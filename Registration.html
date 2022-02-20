@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Registration</title>
+</head>
+<body>
+
+	<h2>Registration Form</h2>
+
+	<form action="Registration_Action.php" method="post" novalidate>
+
+		<fieldset>
+		
+		<legend> Basic Information</legend>
+
+		<label for="fname">First Name*:</label>
+		<input type="text" name="firstname" id="fname" size="30">
+
+		<br><br>
+
+		<label for="lname">Last Name*:</label>
+		<input type="text" name="lastname" id="lname" size="30" >
+
+		<br><br>
+
+		<label for="gender">Gender*:</label>
+		<input type="radio" name="gender" id="gender" value="Male" >
+		<label for="male">Male</label>
+		<input type="radio" name="gender" id="gender" value="Female" >
+		<label for="female">Female</label>
+		<input type="radio" name="gender" id="gender" value="Others" >
+		<label for="others">Others</label>
+
+		<br><br>
+
+		<label for="date">Date*:</label>
+		<input type="Date" name="date" id="date" size="30" >
+	
+		<br><br>
+
+		<label for="religion">Religion*:</label>
+		<select name="religion" id="religion">
+    	<option value="Muslim">Muslim</option>
+    	<option value="Hindu">Hindu</option>
+    	<option value="Christian">Christian</option>
+    	<option value="Budha">Budha</option>
+  		</select>
+
+		<br><br>
+		
+		</fieldset>
+
+		<fieldset>
+
+		<legend>Contact Information</legend>
+
+		<label for="Padd">Present address*:</label>
+		<textarea name="padd" id="padd" rows="3" cols="30"></textarea> 
+
+		<br><br>
+
+		<label for="Pmtadd">Permanent Address:</label>
+		<textarea name="pmtadd" id="pmtadd" rows="3" cols="30"></textarea>
+
+		<br><br>
+
+		<label for="phone">Phone:</label>
+		<input type="tel" name="phone" id="phone" size="30" >
+
+		<br><br>
+
+		<label for="email">Email*:</label>
+		<input type="text" name="email" id="email" size="30" >
+
+		<br><br>
+
+		<label for="PUrl">Personal Website link:</label>
+		<input type="url" name="PUrl" id="PUrl" size="30" >
+
+		<br><br>
+
+		</fieldset>
+
+		<fieldset>
+			<legend>Credentials</legend>
+
+		<label for="Uname">Username*:</label>
+		<input type="text" name="Uname" id="Uname" size="30">
+
+		<br><br>
+
+		<label for="pass">Password*:</label>
+		<input type="password" name="pass" id="pass" size="30">
+
+		<br><br>
+
+		<label for="Cpass">Confirm Password*:</label>
+		<input type="password" name="Cpass" id="Cpass" size="30">
+
+		<br><br>
+
+
+		</fieldset>
+
+		<input type="submit" name="submit" >
+
+
+	</form>
+
+
+</body>
+</html>
